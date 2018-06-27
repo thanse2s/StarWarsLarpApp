@@ -16,19 +16,26 @@ public class file_view extends Fragment {
 
     public file_view(){}
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view =   inflater.inflate(R.layout.files_grid_view, container, false);
         super.onCreate(savedInstanceState);
 
-        GridView gridView = (GridView)getActivity().findViewById(R.id.file_grid);
+        GridView gridView = (GridView) view.findViewById(R.id.file_grid);
         list_adapter adp = new list_adapter(getActivity());
         gridView.setAdapter(adp);
+
+
 
         return  view;
 
     }
+
+
+
+
 
 
 

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.tobi.myapplication.ressource.data_file;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        data_file.init();
 
         Button btn_qr = (Button)findViewById(R.id.qr_code);
         Button btn_files = (Button) findViewById(R.id.files);

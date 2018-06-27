@@ -12,6 +12,9 @@ import com.example.tobi.myapplication.ressource.data_file;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
+
 public class list_adapter extends BaseAdapter {
 
     private  Context mContext;
@@ -39,7 +42,7 @@ public class list_adapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView txt = new TextView(mContext);
-        txt.setText(String.valueOf(position));
+        txt.setText(String.valueOf(data_file.get_name_from_list_Item(position)));
         txt.setTextColor(Color.WHITE);
         return  txt;
 
