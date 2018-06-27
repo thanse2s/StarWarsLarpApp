@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StarWars</string>
+    <string name="test">TEST</string>
+    <string name="time">Time</string>
+    <string name="news">NEWS</string>
+    <string name="data_pad">data_pad</string>
+    <string name="button">Button</string>
+</resources>
